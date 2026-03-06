@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section id="about" className="space-y-6">
       <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-black dark:text-white">
-        Hi, I'm [O Teu Nome] 👋
+        Hi, I'm Guilherme and welcome to my page!👋
       </h1>
       <h2 className="text-xl font-medium text-gray-600 dark:text-gray-400">
         Computer Science & Engineering Student @ Instituto Superior Técnico
