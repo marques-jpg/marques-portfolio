@@ -16,7 +16,7 @@ export default function Home() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            Computer Science Student @ IST
+            Computer Science and Engineering Student @ IST
           </div>
 
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-tight">
@@ -43,7 +43,6 @@ export default function Home() {
         </div>
 
         <div className="w-full rounded-xl overflow-hidden bg-[#0d1117] border border-gray-800 shadow-2xl">
-          {/* Topo do terminal */}
           <div className="flex items-center px-4 py-2 bg-[#161b22] border-b border-gray-800">
             <div className="flex gap-2">
               <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></div>
@@ -56,15 +55,11 @@ export default function Home() {
           <div className="p-5 md:p-6 font-mono text-sm leading-relaxed">
             <div className="flex items-center gap-2 mb-1.5">
               <span className="text-emerald-400 font-semibold">guest@portfolio:~$</span>
-              <span className="text-gray-100">sudo cat about_me.txt</span>
-            </div>
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-gray-400">[sudo] password for guest: </span>
-              <span className="text-gray-100 tracking-[0.2em]">********</span>
+              <span className="text-gray-100">cat about_me.txt</span>
             </div>
             <p className="text-gray-300">
-              Passionate about software engineering, embedded systems, and hardware prototyping. 
-              When I'm not organizing tech events, I'm probably writing C++ or tinkering with Arduino.
+              Passionate about software engineering, embedded systems, cybersecurity, and hardware prototyping. 
+              When I'm not organizing tech events, I'm probably writing code or tinkering with an Arduino.
             </p>
             <div className="flex items-center gap-2 mt-4">
               <span className="text-emerald-400 font-semibold">guest@portfolio:~$</span>
