@@ -5,7 +5,7 @@ export default function Home() {
         📍 Odivelas, Lisbon, Portugal
       </p>
       <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-        Hi there, I'm Guilherme! 👋
+        Hi there, I'm Guilherme! 🧑🏼‍💻
       </h1>
       <p className="text-xl text-gray-600 dark:text-gray-300 font-medium">
         Welcome to my page.

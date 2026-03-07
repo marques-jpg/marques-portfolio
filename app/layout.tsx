@@ -4,13 +4,11 @@ import "./globals.css";
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-// Inicializa a fonte Inter
 const inter = Inter({ subsets: ["latin"] });
 
-// Os teus metadados
 export const metadata: Metadata = {
-  title: "Gonçalo Marques | Portefólio",
-  description: "Portefólio de Gonçalo Marques, Estudante de Engenharia Informática e de Computadores no Instituto Superior Técnico.",
+  title: "Guilherme Marques | Portefólio",
+  description: "Portefólio de Guilherme Marques, Estudante de Engenharia Informática.",
 };
 
 export default function RootLayout({
@@ -20,10 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-white dark:bg-[#1a1a1a] text-black dark:text-white min-h-screen`}>
-        <div className="max-w-3xl mx-auto px-6 flex flex-col min-h-screen">
+      {/* O bg-[#1a1a1a] força o fundo escuro da imagem que enviaste */}
+      <body className={`${inter.className} bg-[#1a1a1a] text-white min-h-screen`}>
+        {/* max-w-5xl alarga a página */}
+        <div className="max-w-5xl mx-auto px-8 flex flex-col min-h-screen">
           <Navbar />
-          <main className="flex-grow pt-16">
+          {/* flex-grow flex flex-col justify-center centra a página inicial verticalmente */}
+          <main className="flex-grow flex flex-col justify-center pb-20">
             {children}
           </main>
           <Footer />
