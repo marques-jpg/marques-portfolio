@@ -4,17 +4,13 @@ export default function Home() {
   return (
     <div className="relative w-full mx-auto">
       
-      {/* Efeitos de luz no fundo */}
       <div className="absolute -top-20 -left-10 w-72 h-72 bg-yellow-600 rounded-full mix-blend-screen filter blur-[120px] opacity-20 animate-pulse pointer-events-none"></div>
-      <div className="absolute top-20 -right-10 w-72 h-72 bg-orange-600 rounded-full mix-blend-screen filter blur-[120px] opacity-20 pointer-events-none"></div>
+      <div className="absolute top-20 -right-10 w-72 h-72 bg-yellow-600 rounded-full mix-blend-screen filter blur-[120px] opacity-20 pointer-events-none"></div>
 
-      {/* GRELHA: 1 coluna em mobile, 2 colunas em ecrãs grandes (lg) */}
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         
-        {/* COLUNA DA ESQUERDA: Texto e Botões */}
         <div className="space-y-6 md:space-y-8">
           
-          {/* Badge de Status */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs md:text-sm font-medium text-gray-300 backdrop-blur-md w-max">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -23,7 +19,6 @@ export default function Home() {
             Computer Science Student @ IST
           </div>
 
-          {/* Título Principal */}
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-tight">
             Hi, I'm <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-700 via-yellow-500 to-yellow-300">
@@ -31,7 +26,6 @@ export default function Home() {
             </span>
           </h1>
 
-          {/* Botões de Navegação */}
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <Link 
               href="/projects" 
@@ -48,7 +42,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* COLUNA DA DIREITA: Terminal */}
         <div className="w-full rounded-xl overflow-hidden bg-[#0d1117] border border-gray-800 shadow-2xl">
           {/* Topo do terminal */}
           <div className="flex items-center px-4 py-2 bg-[#161b22] border-b border-gray-800">
@@ -60,7 +53,6 @@ export default function Home() {
             <div className="mx-auto text-[10px] md:text-xs text-gray-500 font-mono">bash - guest@portfolio</div>
           </div>
           
-          {/* Corpo do terminal */}
           <div className="p-5 md:p-6 font-mono text-sm leading-relaxed">
             <div className="flex items-center gap-2 mb-1.5">
               <span className="text-emerald-400 font-semibold">guest@portfolio:~$</span>

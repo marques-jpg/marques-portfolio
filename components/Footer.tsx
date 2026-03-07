@@ -10,6 +10,9 @@ export default function Footer() {
         <a href="https://github.com/marques-jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
           GitHub
         </a>
+        <a href="mailto:guilherme@marques.at.eu.org" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            Email
+        </a>
         <a href="https://www.linkedin.com/in/guilherme-marques-3a1b7b368/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
           LinkedIn
         </a>
