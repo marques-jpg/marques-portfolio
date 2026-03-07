@@ -18,9 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#1a1a1a] text-white min-h-screen flex flex-col p-8 md:p-16`}>
+      {/* Reduzi o p-16 para py-8 para não roubar tanto ecrã na vertical */}
+      <body className={`${inter.className} bg-[#1a1a1a] text-white min-h-screen flex flex-col px-8 py-4 md:px-16 md:py-8`}>
         <Navbar />
-        <main className="flex-grow flex flex-col justify-center max-w-4xl mt-12 mb-20">
+        {/* Removi o mt-12 e mb-20. O flex-grow e justify-center tratam de centrar sozinhos! */}
+        <main className="flex-grow flex flex-col justify-center max-w-4xl w-full mx-auto">
           {children}
         </main>
         <Footer />
