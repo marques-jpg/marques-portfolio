@@ -54,7 +54,7 @@ export default function Home() {
           
           <div className="p-5 md:p-6 font-mono text-sm leading-relaxed">
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-emerald-400 font-semibold">guest@portfolio:~$</span>
+              <span className="text-yellow-400 font-semibold">guest@portfolio:~$</span>
               <span className="text-gray-100">cat about_me.txt</span>
             </div>
             <p className="text-gray-300">
@@ -62,7 +62,7 @@ export default function Home() {
               When I'm not organizing tech events, I'm probably writing code or tinkering with an Arduino.
             </p>
             <div className="flex items-center gap-2 mt-4">
-              <span className="text-emerald-400 font-semibold">guest@portfolio:~$</span>
+              <span className="text-yellow-400 font-semibold">guest@portfolio:~$</span>
               <span className="w-2 h-4 bg-gray-400 animate-pulse"></span>
             </div>
           </div>

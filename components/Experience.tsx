@@ -43,7 +43,7 @@ export default function Experience() {
       {selectedExperience && (
         <div 
           key={selectedExperience.id} 
-          className="mb-16 p-6 md:p-8 w-full max-w-2xl bg-[#0d1117] border border-gray-800 rounded-3xl shadow-2xl animate-in fade-in slide-in-from-bottom-4 duration-500"
+          className="mb-10 p-6 md:p-8 w-full max-w-2xl bg-[#0d1117] border border-gray-800 rounded-3xl shadow-2xl animate-in fade-in slide-in-from-bottom-4 duration-500"
         >
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2 mb-4 border-b border-gray-800 pb-4">
             <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
@@ -60,22 +60,30 @@ export default function Experience() {
         </div>
       )}
 
-      {/* A Timeline em Arco (adaptada para Dark Mode) */}
-      <div className="relative w-full max-w-3xl h-32 flex items-center justify-center mt-10">
+      {/* A Timeline em Arco (Corrigida para os pontos acompanharem a curva) */}
+      <div className="relative w-full max-w-3xl h-40 mt-8 mx-auto">
         
-        {/* A Linha em Arco (fundo) */}
-        <div className="absolute inset-0 border-t-2 border-gray-700 rounded-[100%_100%_0_0] -z-10 h-24 transform translate-y-4"></div>
+        {/* A Linha em Arco (fundo) - Começa aos 48px do topo e tem 96px de altura */}
+        <div className="absolute top-12 left-0 right-0 border-t-2 border-gray-700 rounded-[100%_100%_0_0] -z-10 h-24"></div>
 
         {/* Pontos de Interação */}
         {experiences.map((exp, index) => {
           const isSelected = exp.id === selectedExperience.id;
+          
+          // Posição Horizontal (Esquerda para a Direita)
           const xPos = `${(index / (experiences.length - 1)) * 100}%`;
+          
+          // CÁLCULO DA POSIÇÃO VERTICAL (Y) MÁGICA:
+          // Se for o primeiro (0) ou o último (3), desce para os 144px (base do arco)
+          // Se forem os do meio (1 ou 2), sobem para os 56px (topo do arco)
+          const isEdge = index === 0 || index === experiences.length - 1;
+          const yPos = isEdge ? '144px' : '56px';
 
           return (
             <div 
               key={exp.id} 
               className="absolute group flex flex-col items-center cursor-pointer"
-              style={{ left: xPos, transform: 'translateX(-50%) translateY(-50%)' }}
+              style={{ left: xPos, top: yPos, transform: 'translateX(-50%) translateY(-50%)' }}
               onClick={() => setSelectedExperience(exp)}
             >
               {/* Rótulo de texto */}
