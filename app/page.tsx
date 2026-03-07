@@ -5,8 +5,8 @@ export default function Home() {
     <div className="relative w-full mx-auto">
       
       {/* Efeitos de luz no fundo (Glowing Orbs) */}
-      <div className="absolute -top-20 -left-10 w-72 h-72 bg-blue-600 rounded-full mix-blend-screen filter blur-[120px] opacity-20 animate-pulse"></div>
-      <div className="absolute top-40 -right-10 w-72 h-72 bg-emerald-600 rounded-full mix-blend-screen filter blur-[120px] opacity-20"></div>
+      <div className="absolute -top-20 -left-10 w-72 h-72 bg-yellow-600 rounded-full mix-blend-screen filter blur-[120px] opacity-20 animate-pulse"></div>
+      <div className="absolute top-40 -right-10 w-72 h-72 bg-orange-600 rounded-full mix-blend-screen filter blur-[120px] opacity-20"></div>
 
       <div className="relative z-10 space-y-8 mt-10 md:mt-20">
         
@@ -23,7 +23,7 @@ export default function Home() {
         <div className="space-y-4">
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-tight">
             Hi, I'm <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-teal-400 to-emerald-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-700 via-yellow-500 to-yellow-300">
               Guilherme Marques
             </span>
           </h1>
