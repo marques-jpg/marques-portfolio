@@ -13,14 +13,14 @@ const experiences = [
   {
     id: 2,
     title: "ENGENHARIA PARA TODOS",
-    logo: "/logos/ept.svg", // Usa o logo do IST ou outro à tua escolha
+    logo: "/logos/ept.png", // Usa o logo do IST ou outro à tua escolha
     year: "October 2025 - Present",
     description: "Research Scholarship: I serve as a STEM Mentor in a partnership between Instituto Superior Técnico, INESC-ID, and the Oeiras City Council. My role focuses on introducing primary school all the way to high school students to Computer Science and Electronics. I lead the 'Smart City' project, where I guide schools in developing intelligent urban models through monthly sessions on Programming, 3D Modeling, and Electronics. Additionally, I’m actively involved in outreach initiatives like 'Oeiras Educa', 'Lab in a Box', and 'STEAM Lab', bringing engineering concepts to life for younger audiences. I also represent the project and promote engineering concepts at public events.",
   },
   {
     id: 3,
     title: "ROB9-16",
-    logo: "/logos/rob916.svg", 
+    logo: "/logos/Rob916.png", 
     year: "October 2025 - March 2026",
     description: "Research Scholarship: During the 'Winter Camp' at Instituto Superior Técnico, I served as a Mentor for the Rob9-16 program. I had the rewarding challenge of teaching children (ages 6-12) the fundamentals of engineering. We built a Tic-Tac-Toe game from scratch using Arduino, where I taught C++ programming, logic design, and how to assemble circuits on a breadboard. It was a great opportunity to simplify complex technical concepts into engaging, hands-on learning experiences.",
   },
