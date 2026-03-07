@@ -1,7 +1,7 @@
 export default function Experience() {
   return (
     <section id="experience" className="space-y-6">
-      <h3 className="text-2xl font-semibold text-black dark:text-white mb-6">Experience & Volunteering</h3>
+      <h3 className="text-2xl font-semibold text-black dark:text-white mb-6">Experience</h3>
       
       <div className="space-y-8">
         {/* SINFO */}

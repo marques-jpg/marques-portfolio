@@ -1,17 +1,15 @@
-import Hero from '@/components/Hero';
-import Projects from '@/components/Projects';
-import Experience from '@/components/Experience';
-import Footer from '@/components/Footer';
-
 export default function Home() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-20 text-gray-800 dark:text-gray-200">
-      <div className="space-y-24">
-        <Hero />
-        <Projects />
-        <Experience />
-      </div>
-      <Footer />
-    </main>
+    <div className="space-y-6 mt-12">
+      <p className="text-gray-500 dark:text-gray-400 flex items-center gap-2 font-medium">
+        📍 Odivelas, Lisbon, Portugal
+      </p>
+      <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+        Hi there, I'm Guilherme! 👋
+      </h1>
+      <p className="text-xl text-gray-600 dark:text-gray-300 font-medium">
+        Welcome to my page.
+      </p>
+    </div>
   );
 }
