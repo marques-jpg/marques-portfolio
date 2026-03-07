@@ -31,28 +31,33 @@ const experiences = [
 
 export default function Experience() {
   const [selectedExperience, setSelectedExperience] = useState(experiences[1]);
+return (
+  <div className="flex flex-col items-center justify-center py-10 w-full">
+    <div className="relative isolate flex flex-col items-center justify-center py-10 w-full">
+      {/* removido: glow fixo no canto */}
 
-  return (
-    <div className="flex flex-col items-center justify-center py-10 w-full">
-      
-      {/* Área do Pop-up (Detalhes) */}
       {selectedExperience && (
-        <div 
-          key={selectedExperience.id} 
-          className="mb-10 p-6 md:p-8 w-full max-w-2xl bg-[#0d1117] border border-gray-800 rounded-3xl shadow-2xl animate-in fade-in slide-in-from-bottom-4 duration-500"
-        >
-          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2 mb-4 border-b border-gray-800 pb-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
-              {selectedExperience.title}
-            </h2>
-            <span className="text-lg font-medium text-yellow-400">
-              {selectedExperience.year}
-            </span>
+        <div key={selectedExperience.id} className="relative mb-10 w-full max-w-2xl">
+          {/* Glow centrado atrás da caixa */}
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+            <div className="w-80 h-80 rounded-full bg-yellow-500/25 blur-[120px] animate-pulse" />
           </div>
-          
-          <p className="text-base md:text-lg leading-relaxed text-gray-300">
-            {selectedExperience.description}
-          </p>
+
+          {/* Caixa de texto */}
+          <div className="relative z-10 p-6 md:p-8 w-full bg-[#0d1117] border border-gray-800 rounded-3xl shadow-2xl animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2 mb-4 border-b border-gray-800 pb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
+                {selectedExperience.title}
+              </h2>
+              <span className="text-lg font-medium text-yellow-400">
+                {selectedExperience.year}
+              </span>
+            </div>
+
+            <p className="text-base md:text-lg leading-relaxed text-gray-300">
+              {selectedExperience.description}
+            </p>
+          </div>
         </div>
       )}
 
@@ -73,7 +78,7 @@ export default function Experience() {
           // Se for o primeiro (0) ou o último (3), desce para os 144px (base do arco)
           // Se forem os do meio (1 ou 2), sobem para os 56px (topo do arco)
           const isEdge = index === 0 || index === experiences.length - 1;
-          const yPos = isEdge ? '120px' : '56px';
+          const yPos = isEdge ? '100px' : '56px';
 
           return (
             <div 
@@ -111,5 +116,6 @@ export default function Experience() {
       </div>
 
     </div>
+  </div>
   );
 }
