@@ -20,24 +20,46 @@ export default function Home() {
         </div>
 
         {/* Título Principal com Gradiente */}
-        <div className="space-y-4">
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-tight">
-            Hi, I'm <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-700 via-yellow-500 to-yellow-300">
-              Guilherme Marques
-            </span>
-          </h1>
-          {/* Subtítulo estilo terminal */}
-          <p className="text-xl md:text-2xl font-mono text-gray-400">
-            {">"} building smart solutions_
-          </p>
-        </div>
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-tight">
+          Hi, I'm <br className="hidden md:block" />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-700 via-yellow-500 to-yellow-300">
+            Guilherme Marques
+          </span>
+        </h1>
 
-        {/* Descrição */}
-        <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-          Passionate about software engineering, embedded systems, and hardware prototyping. 
-          When I'm not organizing tech events, I'm probably writing C++ or tinkering with Arduino.
-        </p>
+        {/* JANELA DE TERMINAL */}
+        <div className="w-full max-w-2xl mt-8 rounded-xl overflow-hidden bg-[#0d1117] border border-gray-800 shadow-2xl">
+          {/* Topo do terminal (botões) */}
+          <div className="flex items-center px-4 py-3 bg-[#161b22] border-b border-gray-800">
+            <div className="flex gap-2">
+              <div className="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
+              <div className="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
+              <div className="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+            </div>
+            <div className="mx-auto text-xs text-gray-500 font-mono">bash - guest@portfolio</div>
+          </div>
+          
+          {/* Corpo do terminal */}
+          <div className="p-5 font-mono text-sm md:text-base leading-relaxed">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-emerald-400 font-semibold">guest@portfolio:~$</span>
+              <span className="text-gray-100">sudo cat about_me.txt</span>
+            </div>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-gray-400">[sudo] password for guest: </span>
+              <span className="text-gray-100 tracking-[0.2em]">********</span>
+            </div>
+            <p className="text-gray-300">
+              Passionate about software engineering, embedded systems, and hardware prototyping. 
+              When I'm not organizing tech events, I'm probably writing C++ or tinkering with Arduino.
+            </p>
+            <div className="flex items-center gap-2 mt-4">
+              <span className="text-emerald-400 font-semibold">guest@portfolio:~$</span>
+              {/* Cursor a piscar */}
+              <span className="w-2.5 h-5 bg-gray-400 animate-pulse"></span>
+            </div>
+          </div>
+        </div>
 
         {/* Botões de Navegação Rápidos */}
         <div className="flex flex-col sm:flex-row gap-4 pt-6">
