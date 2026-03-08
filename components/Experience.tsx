@@ -8,7 +8,7 @@ const experiences = [
     title: "SINFO - LOGISTICS TEAM",
     logo: "/logos/sinfo.png", // Certifica-te que este ficheiro existe na pasta public/logos/
     year: "May 2025 - Present",
-    description: "Biggest free tech conference in Portugal. Tasked with Logistics :Venue design, technical setup, and onsite coordination.",
+    description: "Biggest free tech conference in Portugal. Tasked with Logistics: Venue design, technical setup, and onsite coordination.",
   },
   {
     id: 2,
@@ -111,9 +111,7 @@ export default function Experience() {
                 {/* O Ponto de Interação */}
                 <div 
                   className={`relative w-6 h-6 md:w-8 md:h-8 rounded-full border-4 transition-all duration-300 transform group-hover:scale-110 
-                    ${isSelected ? 'border-yellow-400 bg-[#0d1117] scale-125' : 'border-gray-700 bg-gray-800'}
-                  `}
-                >
+                    ${isSelected ? 'border-yellow-400 bg-[#0d1117] scale-125' : 'border-gray-700 bg-gray-800'}`}>
                   {/* Ícone interior quando selecionado */}
                   {isSelected && (
                     <div className="absolute inset-0 flex items-center justify-center text-xs md:text-sm">
