@@ -32,7 +32,7 @@ const projectsData = [
   {
     id: 4,
     title: "Library Managment System",
-    description: "This project is a Java-based Library Management System (BCI) for my Object-Oriented Programming class. It features a robust domain model for managing library users, various types of works (such as Books and DVDs), and a complete workflow for borrowing and returning items.",
+    description: "A text based Library Management system written in Java for my Object-Oriented Programming class.",
     tags: ["Java"],
     colorGlow: "from-brown-500/20",
     url: "https://github.com/marques-jpg/Projeto-PO",
@@ -41,7 +41,7 @@ const projectsData = [
   {
     id: 5,
     title: "Multi Client Pacman game",
-    description: "This project is a C implementation of a Pacman-inspired game built on a Client-Server architecture for my Operating Systems class. Its main focus is to demonstrate Inter-Process Communication (IPC) using Named Pipes (FIFOs), concurrency through Multithreading, and synchronization tools such as Mutexes, Condition Variables, and Semaphores.",
+    description: "A C implementation of the pacman game, built on a Client-Server architecture for my Operating Systems class.",
     tags: ["C", "Linux"],
     colorGlow: "from-pink-500/20",
     url: "https://github.com/marques-jpg/Projeto-SO-2",
