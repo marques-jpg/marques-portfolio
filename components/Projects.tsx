@@ -27,7 +27,7 @@ const projectsData = [
     tags: ["Arduino", "DHT22", "C++", "BMP085", "Nokia LCD 5510"],
     colorGlow: "from-red-500/20",
     url: "https://github.com/marques-jpg/Weather-Station",
-    featured: false
+    featured: true
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const projectsData = [
     tags: ["Java"],
     colorGlow: "from-brown-500/20",
     url: "https://github.com/marques-jpg/Projeto-PO",
-    featured: true // Outro projeto em destaque para equilibrar a grelha
+    featured: false // Outro projeto em destaque para equilibrar a grelha
   },
   {
     id: 5,
