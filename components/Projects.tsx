@@ -4,47 +4,47 @@ import React from 'react';
 const projectsData = [
   {
     id: 1,
-    title: "Portfolio Pessoal & Terminal",
-    description: "O meu portefólio interativo construído de raiz com Next.js, Tailwind CSS e uma interface de terminal inspirada no macOS. Alojado na margem da rede com Cloudflare Pages.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
-    colorGlow: "from-blue-500/20",
-    url: "https://github.com/TEU_USER/portfolio",
-    featured: true // Isto vai fazê-lo ocupar mais espaço!
+    title: "Portfolio",
+    description: "My portfolio website. Built with Next.js and deployed with Cloudflare Pages.",
+    tags: ["Next.js", "TypeScript", "Cloudflare"],
+    colorGlow: "from-yellow-500/20",
+    url: "https://github.com/marques-jpg/marques-portfolio",
+    featured: false // Isto vai fazê-lo ocupar mais espaço!
   },
   {
     id: 2,
-    title: "Smart City Prototype",
-    description: "Maquete inteligente com controlo de tráfego e iluminação pública automatizada.",
-    tags: ["Arduino", "C++", "Sensors"],
-    colorGlow: "from-emerald-500/20",
-    url: "https://github.com/",
-    featured: false
+    title: "Galo-Bot",
+    description: "Project made for the Rob9-16 'Winter University'. Made in C++ and for an Arduino Uno. The game is displayed in a 3x3 grid made with LEDs, the 'X' player is represented by a fully turned on LED, the 'O' player is represented by a LED ticking really fast and the cursor is represented by a LED ticking slower than the 'O' player. In the end the winning player is displayed in the grid.",
+    tags: ["Arduino", "C++", "LEDs", "Breadboard"],
+    colorGlow: "from-orange-500/20",
+    url: "https://github.com/marques-jpg/Galo-Bot",
+    featured: true
   },
   {
     id: 3,
-    title: "Tic-Tac-Toe Hardware",
-    description: "Um jogo do galo físico feito do zero com matrizes LED e lógica de microcontroladores.",
-    tags: ["Hardware", "Logic", "C++"],
-    colorGlow: "from-yellow-500/20",
-    url: "https://github.com/",
+    title: "Weather Station",
+    description: "Project made for the 'Engenharia para todos' 'Familas Tech' activity. Made in C++ for the arduino UNO. Using a Nokia LCD 5110 screen, a temperature and Humidity sensor (DHT22) and an air pressure sensor (BMP085) we can capture all the information we need and display it on the nokia screen",
+    tags: ["Arduino", "DHT22", "C++", "BMP085", "Nokia LCD 5510"],
+    colorGlow: "from-red-500/20",
+    url: "https://github.com/marques-jpg/Weather-Station",
     featured: false
   },
   {
     id: 4,
-    title: "Event Manager CLI",
-    description: "Ferramenta de linha de comandos para gerir a logística e horários de voluntários da SINFO.",
-    tags: ["Rust", "CLI", "Tooling"],
-    colorGlow: "from-purple-500/20",
-    url: "https://github.com/",
+    title: "Library Managment System",
+    description: "This project is a Java-based Library Management System (BCI) for my Object-Oriented Programming class. It features a robust domain model for managing library users, various types of works (such as Books and DVDs), and a complete workflow for borrowing and returning items.",
+    tags: ["Java"],
+    colorGlow: "from-brown-500/20",
+    url: "https://github.com/marques-jpg/Projeto-PO",
     featured: true // Outro projeto em destaque para equilibrar a grelha
   },
   {
     id: 5,
-    title: "Data Analyzer",
-    description: "Script para análise automática de feedback de eventos.",
-    tags: ["Python", "Pandas"],
-    colorGlow: "from-red-500/20",
-    url: "https://github.com/",
+    title: "Multi Client Pacman game",
+    description: "This project is a C implementation of a Pacman-inspired game built on a Client-Server architecture for my Operating Systems class. Its main focus is to demonstrate Inter-Process Communication (IPC) using Named Pipes (FIFOs), concurrency through Multithreading, and synchronization tools such as Mutexes, Condition Variables, and Semaphores.",
+    tags: ["C", "Linux"],
+    colorGlow: "from-pink-500/20",
+    url: "https://github.com/marques-jpg/Projeto-SO-2",
     featured: false
   }
 ];
