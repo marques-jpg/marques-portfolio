@@ -34,17 +34,44 @@ const projectsData = [
     title: "Library Managment System",
     description: "A text based Library Management system written in Java for my Object-Oriented Programming class.",
     tags: ["Java"],
-    colorGlow: "from-brown-500/20",
+    colorGlow: "from-pink-500/20",
     url: "https://github.com/marques-jpg/Projeto-PO",
     featured: false // Outro projeto em destaque para equilibrar a grelha
   },
   {
     id: 5,
+    title: "Protein Chain Energy Maximizer",
+    description: "A Protein Chain Energy Maximizer algorithm written in C++ for my Analysis and Synthesis of Algorithms.",
+    tags: ["C++"],
+    colorGlow: "from-yellow-500/20",
+    url: "https://github.com/marques-jpg/Projeto-ASA-1",
+    featured: false
+  },
+  {
+    id: 6,
+    title: "DAG Path Counter & Truck Routing",
+    description: "A C++ DAG Path Counter & Truck Routing algorithm for my Anaysis and Synthesis fo Algorithms.",
+    tags: ["C", "Linux"],
+    colorGlow: "from-orange-500/20",
+    url: "https://github.com/marques-jpg/Projeto-ASA-2",
+    featured: true
+  },
+  {
+    id: 7,
     title: "Multi Client Pacman game",
     description: "A C implementation of the pacman game, built on a Client-Server architecture for my Operating Systems class.",
     tags: ["C", "Linux"],
-    colorGlow: "from-pink-500/20",
+    colorGlow: "from-red-500/20",
     url: "https://github.com/marques-jpg/Projeto-SO-2",
+    featured: true
+  },
+  {
+    id: 8,
+    title: "MILP Sports League Optimizer",
+    description: "A C++ implementation of a MILP Sports League Optimizer for my Analysis and Synthesis of Algorithms",
+    tags: ["Python"],
+    colorGlow: "from-pink-500/20",
+    url: "https://github.com/marques-jpg/Projeto-ASA-3",
     featured: false
   }
 ];
