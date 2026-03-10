@@ -9,7 +9,7 @@ const projectsData = [
     tags: ["Next.js", "TypeScript", "Cloudflare"],
     colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/marques-portfolio",
-    featured: false // Isto vai fazê-lo ocupar mais espaço!
+    featured: false
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ const projectsData = [
     tags: ["Java"],
     colorGlow: "from-pink-500/20",
     url: "https://github.com/marques-jpg/Projeto-PO",
-    featured: false // Outro projeto em destaque para equilibrar a grelha
+    featured: false
   },
   {
     id: 5,
@@ -80,7 +80,6 @@ export default function Projects() {
   return (
     <div className="w-full max-w-5xl mx-auto py-12">
       
-      {/* GRELHA ASSIMÉTRICA */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
         {projectsData.map((project) => (
@@ -89,15 +88,12 @@ export default function Projects() {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            // Se for 'featured', ocupa 2 colunas em ecrãs médios/grandes. Se não, ocupa 1.
             className={`group relative flex flex-col justify-between p-8 rounded-[2rem] bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden transition-all duration-500 hover:border-white/20 hover:-translate-y-1
               ${project.featured ? 'md:col-span-2' : 'col-span-1'}
             `}
           >
-            {/* EFEITO DE LUZ NO FUNDO (Aparece no hover) */}
             <div className={`absolute -inset-x-0 -bottom-0 h-1/2 bg-gradient-to-t ${project.colorGlow} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none`}></div>
 
-            {/* CONTEÚDO PRINCIPAL */}
             <div className="relative z-10 mb-10">
               <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-4 tracking-tight">
                 {project.title}
@@ -107,10 +103,8 @@ export default function Projects() {
               </p>
             </div>
 
-            {/* RODAPÉ DO CARTÃO: Tags e Botão */}
             <div className="relative z-10 flex items-end justify-between gap-4 mt-auto">
               
-              {/* Tags de Tecnologias */}
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag, index) => (
                   <span 
@@ -122,7 +116,6 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* Ícone Redondo com Seta (Anima no hover) */}
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white flex items-center justify-center transform group-hover:scale-110 group-hover:bg-gray-200 transition-all duration-300">
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 

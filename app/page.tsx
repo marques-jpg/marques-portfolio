@@ -35,7 +35,7 @@ export default function Home() {
             </Link>
             <Link 
               href="/experience" 
-              className="px-6 py-2.5 md:px-8 md:py-3 rounded-lg bg-transparent border border-gray-600 text-white font-semibold text-sm md:text-base text-center hover:border-gray-400 hover:bg-white/5 transition-all duration-200"
+              className="px-6 py-2.5 md:px-8 md:py-3 rounded-lg bg-transparent text-white border border-gray-600 font-semibold text-sm md:text-base text-center hover:bg-transparent-200 hover:scale-105 transition-all duration-200"
             >
               View Experience
             </Link>
