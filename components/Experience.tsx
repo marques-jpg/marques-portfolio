@@ -75,7 +75,7 @@ export default function Experience() {
 
         <div className="relative w-full max-w-3xl h-40 mt-8 mx-auto">
           
-«          <div className="absolute top-12 left-0 right-0 border-t-2 border-gray-700 rounded-[100%_100%_0_0] -z-10 h-24"></div>
+          <div className="absolute top-12 left-0 right-0 border-t-2 border-gray-700 rounded-[100%_100%_0_0] -z-10 h-24"></div>
 
           {experiences.map((exp, index) => {
             const isSelected = exp.id === selectedExperience.id;

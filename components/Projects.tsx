@@ -13,20 +13,20 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Galo-Bot",
-    description: "Project made for the Rob9-16 'Winter University'. Made in C++ and for an Arduino Uno. The game is displayed in a 3x3 grid made with LEDs, the 'X' player is represented by a fully turned on LED, the 'O' player is represented by a LED ticking really fast and the cursor is represented by a LED ticking slower than the 'O' player. In the end the winning player is displayed in the grid.",
-    tags: ["Arduino", "C++", "LEDs", "Breadboard"],
-    colorGlow: "from-orange-500/20",
-    url: "https://github.com/marques-jpg/Galo-Bot",
-    featured: true
-  },
-  {
-    id: 3,
     title: "Weather Station",
     description: "Project made for the 'Engenharia para todos' 'Familas Tech' activity. Made in C++ for the arduino UNO. Using a Nokia LCD 5110 screen, a temperature and Humidity sensor (DHT22) and an air pressure sensor (BMP085) we can capture all the information we need and display it on the nokia screen",
     tags: ["Arduino", "DHT22", "C++", "BMP085", "Nokia LCD 5510"],
     colorGlow: "from-red-500/20",
     url: "https://github.com/marques-jpg/Weather-Station",
+    featured: true
+  },
+  {
+    id: 3,
+    title: "Neural Network in RISC-V",
+    description: "An implementation in Assembly RISC-V of a feedforward Artificial Neural Network.",
+    tags: ["Assembly, RISC-V"],
+    colorGlow: "from-orange-500/20",
+    url: "https://github.com/marques-jpg/Neural-Network-in-RISC-V",
     featured: true
   },
   {
@@ -49,11 +49,11 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "DAG Path Counter & Truck Routing",
-    description: "A C++ DAG Path Counter & Truck Routing algorithm for my Anaysis and Synthesis fo Algorithms.",
-    tags: ["C", "Linux"],
+    title: "Galo-Bot",
+    description: "Project made for the Rob9-16 'Winter University'. Made in C++ and for an Arduino Uno. The game is displayed in a 3x3 grid made with LEDs, the 'X' player is represented by a fully turned on LED, the 'O' player is represented by a LED ticking really fast and the cursor is represented by a LED ticking slower than the 'O' player. In the end the winning player is displayed in the grid.",
+    tags: ["Arduino", "C++", "LEDs", "Breadboard"],
     colorGlow: "from-orange-500/20",
-    url: "https://github.com/marques-jpg/Projeto-ASA-2",
+    url: "https://github.com/marques-jpg/Galo-Bot",
     featured: true
   },
   {
@@ -72,6 +72,51 @@ const projectsData = [
     tags: ["Python"],
     colorGlow: "from-pink-500/20",
     url: "https://github.com/marques-jpg/Projeto-ASA-3",
+    featured: false
+  },
+  {
+    id: 9,
+    title: "8-bit Spike Processor",
+    description: "A logic diagram implementation of a processor with a 8-bit data path architecture",
+    tags: ["Logisim"],
+    colorGlow: "from-yellow-500/20",
+    url: "https://github.com/marques-jpg/Processor-8-bit-Spike",
+    featured: false
+  },
+  {
+    id: 10,
+    title: "DAG Path Counter & Truck Routing",
+    description: "A C++ DAG Path Counter & Truck Routing algorithm for my Anaysis and Synthesis fo Algorithms.",
+    tags: ["C", "Linux"],
+    colorGlow: "from-orange-500/20",
+    url: "https://github.com/marques-jpg/Projeto-ASA-2",
+    featured: true
+  },
+  {
+    id: 11,
+    title: "Orbito game",
+    description: "Orbito game implementation in Python for my Programming Fundaments class.",
+    tags: ["Python"],
+    colorGlow: "from-red-500/20",
+    url: "https://github.com/marques-jpg/Projeto-FP",
+    featured: true
+  },
+  {
+    id: 12,
+    title: "Star Batle game Solver",
+    description: "A Prolog Implementation of a Script wich the main focuse is to algorithmically solve Star Battle for my Programming Logic class.",
+    tags: ["Prolog"],
+    colorGlow: "from-pink-500/20",
+    url: "https://github.com/marques-jpg/Projeto-LP",
+    featured: false
+  },
+  {
+    id: 13,
+    title: "Vaccine Managment System",
+    description: "A text based Vaccine Managment System implemented in C for my Introduction to Algorithms and Data Structure.",
+    tags: ["C"],
+    colorGlow: "from-yellow-500/20",
+    url: "https://github.com/marques-jpg/Projeto-IAED",
     featured: false
   }
 ];
