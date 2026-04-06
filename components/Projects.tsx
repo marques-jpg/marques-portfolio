@@ -1,6 +1,5 @@
 import React from 'react';
 
-// O "colorGlow" define a cor do brilho quando passas o rato por cima!
 const projectsData = [
   {
     id: 1,
@@ -11,15 +10,16 @@ const projectsData = [
     url: "https://github.com/marques-jpg/marques-portfolio",
     featured: false
   },
-  {
+    {
     id: 2,
-    title: "Weather Station",
-    description: "Project made for the 'Engenharia para todos' 'Familas Tech' activity. Made in C++ for the arduino UNO. Using a Nokia LCD 5110 screen, a temperature and Humidity sensor (DHT22) and an air pressure sensor (BMP085) we can capture all the information we need and display it on the nokia screen",
-    tags: ["Arduino", "DHT22", "C++", "BMP085", "Nokia LCD 5510"],
-    colorGlow: "from-red-500/20",
-    url: "https://github.com/marques-jpg/Weather-Station",
+    title: "Dotfiles",
+    description: "My portfolio website. Built with Next.js and deployed with Cloudflare Pages.",
+    tags: ["Nix", "NixOS"],
+    colorGlow: "from-yellow-500/20",
+    url: "https://github.com/marques-jpg/marques-portfolio",
     featured: true
   },
+
   {
     id: 3,
     title: "Neural Network in RISC-V",
@@ -28,9 +28,18 @@ const projectsData = [
     colorGlow: "from-orange-500/20",
     url: "https://github.com/marques-jpg/Neural-Network-in-RISC-V",
     featured: true
-  },
+  },  
   {
     id: 4,
+    title: "Weather Station",
+    description: "Project made for the 'Engenharia para todos' 'Familas Tech' activity. Made in C++ for the arduino UNO. Using a Nokia LCD 5110 screen, a temperature and Humidity sensor (DHT22) and an air pressure sensor (BMP085) we can capture all the information we need and display it on the nokia screen",
+    tags: ["Arduino", "DHT22", "C++", "BMP085", "Nokia LCD 5510"],
+    colorGlow: "from-red-500/20",
+    url: "https://github.com/marques-jpg/Weather-Station",
+    featured: false
+  },
+  {
+    id: 5,
     title: "Library Managment System",
     description: "A text based Library Management system written in Java for my Object-Oriented Programming class.",
     tags: ["Java"],
@@ -38,15 +47,7 @@ const projectsData = [
     url: "https://github.com/marques-jpg/Projeto-PO",
     featured: false
   },
-  {
-    id: 5,
-    title: "Protein Chain Energy Maximizer",
-    description: "A Protein Chain Energy Maximizer algorithm written in C++ for my Analysis and Synthesis of Algorithms.",
-    tags: ["C++"],
-    colorGlow: "from-yellow-500/20",
-    url: "https://github.com/marques-jpg/Projeto-ASA-1",
-    featured: false
-  },
+
   {
     id: 6,
     title: "Galo-Bot",
@@ -118,6 +119,15 @@ const projectsData = [
     colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/Projeto-IAED",
     featured: false
+  },  
+  {
+    id: 14,
+    title: "Protein Chain Energy Maximizer",
+    description: "A Protein Chain Energy Maximizer algorithm written in C++ for my Analysis and Synthesis of Algorithms.",
+    tags: ["C++"],
+    colorGlow: "from-yellow-500/20",
+    url: "https://github.com/marques-jpg/Projeto-ASA-1",
+    featured: true
   }
 ];
 
