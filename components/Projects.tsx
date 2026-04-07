@@ -13,31 +13,30 @@ const projectsData = [
     {
     id: 2,
     title: "Dotfiles",
-    description: "My portfolio website. Built with Next.js and deployed with Cloudflare Pages.",
+    description: "My personal dotfiles for my NixOS system",
     tags: ["Nix", "NixOS"],
     colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/marques-portfolio",
     featured: true
   },
-
   {
     id: 3,
-    title: "Neural Network in RISC-V",
-    description: "An implementation in Assembly RISC-V of a feedforward Artificial Neural Network.",
-    tags: ["Assembly, RISC-V"],
-    colorGlow: "from-orange-500/20",
-    url: "https://github.com/marques-jpg/Neural-Network-in-RISC-V",
-    featured: true
-  },  
-  {
-    id: 4,
     title: "Weather Station",
     description: "Project made for the 'Engenharia para todos' 'Familas Tech' activity. Made in C++ for the arduino UNO. Using a Nokia LCD 5110 screen, a temperature and Humidity sensor (DHT22) and an air pressure sensor (BMP085) we can capture all the information we need and display it on the nokia screen",
     tags: ["Arduino", "DHT22", "C++", "BMP085", "Nokia LCD 5510"],
     colorGlow: "from-red-500/20",
     url: "https://github.com/marques-jpg/Weather-Station",
     featured: false
-  },
+  },  
+  {
+    id: 4,
+    title: "Neural Network in RISC-V",
+    description: "An implementation in Assembly RISC-V of a feedforward Artificial Neural Network.",
+    tags: ["Assembly, RISC-V"],
+    colorGlow: "from-orange-500/20",
+    url: "https://github.com/marques-jpg/Neural-Network-in-RISC-V",
+    featured: true
+  }, 
   {
     id: 5,
     title: "Library Managment System",
