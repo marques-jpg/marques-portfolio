@@ -26,7 +26,7 @@ const projectsData = [
     tags: ["Arduino", "DHT22", "C++", "BMP085", "Nokia LCD 5510"],
     colorGlow: "from-red-500/20",
     url: "https://github.com/marques-jpg/Weather-Station",
-    featured: false
+    featured: true
   },  
   {
     id: 4,
@@ -35,7 +35,7 @@ const projectsData = [
     tags: ["Assembly, RISC-V"],
     colorGlow: "from-orange-500/20",
     url: "https://github.com/marques-jpg/Neural-Network-in-RISC-V",
-    featured: true
+    featured: false
   }, 
   {
     id: 5,
