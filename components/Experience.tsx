@@ -8,7 +8,7 @@ const experiences = [
     title: "SINFO - LOGISTICS TEAM",
     logo: "/logos/sinfo.png",
     year: "May 2025 - Present",
-    description: "Biggest free tech conference in Portugal. Tasked with Logistics: Venue design, technical setup, and onsite coordination.",
+    description: " My role on the Logistics Team at SINFO – The Biggest free Tech Conference in Portugal – has equipped me with essential skills. Operating in a high-stakes, fast-paced environment, I collaborate with a large team to manage technical setups, venue design, and onsite coordination. This experience has significantly sharpened my adaptability, teamwork and dynamic problem-solving capabilities under pressure.",
   },
   {
     id: 2,
