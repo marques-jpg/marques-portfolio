@@ -94,7 +94,7 @@ const projectsData = [
   },
   {
     id: 11,
-    title: "Star Batle game Solver",
+    title: "Star Battle game Solver",
     description: "A Prolog Implementation of a Script wich the main focuse is to algorithmically solve Star Battle for my Programming Logic class.",
     tags: ["Prolog"],
     colorGlow: "from-yellow-500/20",

@@ -5,27 +5,34 @@ import { useState } from 'react';
 const experiences = [
   {
     id: 1,
-    title: "SINFO - LOGISTICS TEAM",
-    logo: "/logos/sinfo.png",
-    year: "May 2025 - Present",
-    description: " My role on the Logistics Team at SINFO – The Biggest free Tech Conference in Portugal – has equipped me with essential skills. Operating in a high-stakes, fast-paced environment, I collaborate with a large team to manage technical setups, venue design, and onsite coordination. This experience has significantly sharpened my adaptability, teamwork and dynamic problem-solving capabilities under pressure.",
-  },
-  {
-    id: 2,
     title: "ENGENHARIA PARA TODOS",
     logo: "/logos/ept.png",
     year: "October 2025 - Present",
     description: "Research Scholarship: I serve as a STEM Mentor in a partnership between Instituto Superior Técnico, INESC-ID, and the Oeiras City Council. My role focuses on introducing primary school all the way to high school students to Computer Science and Electronics. I lead the 'Smart City' project, where I guide schools in developing intelligent urban models through monthly sessions on Programming, 3D Modeling, and Electronics. Additionally, I’m actively involved in outreach initiatives like 'Oeiras Educa', 'Lab in a Box', and 'STEAM Lab', bringing engineering concepts to life for younger audiences. I also represent the project and promote engineering concepts at public events.",
   },
   {
+    id: 2,
+    title: "SINFO - LOGISTICS TEAM",
+    logo: "/logos/sinfo.png",
+    year: "May 2025 - May 2026",
+    description: "My role on the Logistics Team at SINFO – The Biggest free Tech Conference in Portugal – has equipped me with essential skills. Operating in a high-stakes, fast-paced environment, I collaborate with a large team to manage technical setups, venue design, and onsite coordination. This experience has significantly sharpened my adaptability, teamwork and dynamic problem-solving capabilities under pressure.",
+  },
+  {
     id: 3,
+    title: "SINFO - COORDINATOR",
+    logo: "/logos/sinfo.png",
+    year: "May 2026 - Present",
+    description: "As one of the four Coordinators at SINFO, Portugal's largest free tech conference, I oversee the event's year-round operations and strategic details. My role involves managing and supporting a dedicated 30+ person team across multiple departments to ensure flawless logistics and execution. By streamlining cross-functional communication and acting as the primary liaison with external institutions, I strive to maintain the highest standards of organization to deliver a highly successful and impactful event.",
+  },
+  {
+    id: 4,
     title: "ROB9-16",
     logo: "/logos/Rob916.png", 
     year: "October 2025 - March 2026",
     description: "Research Scholarship: During the 'Winter Camp' at Instituto Superior Técnico, I served as a Mentor for the Rob9-16 program. I had the rewarding challenge of teaching children (ages 6-12) the fundamentals of engineering. We built a Tic-Tac-Toe game from scratch using Arduino, where I taught C++ programming, logic design, and how to assemble circuits on a breadboard. It was a great opportunity to simplify complex technical concepts into engaging, hands-on learning experiences.",
   },
   {
-    id: 4,
+    id: 5,
     title: "STUDENT COUNCIL",
     logo: "/logos/adelaide.png",
     year: "February 2024 - September 2024",
@@ -34,7 +41,7 @@ const experiences = [
 ];
 
 export default function Experience() {
-  const [selectedExperience, setSelectedExperience] = useState(experiences[1]);
+  const [selectedExperience, setSelectedExperience] = useState(experiences[2]);
   
   return (
     <div className="flex flex-col items-center justify-center py-10 w-full">
@@ -43,7 +50,6 @@ export default function Experience() {
         {selectedExperience && (
           <div key={selectedExperience.id} className="relative mb-10 w-full max-w-2xl">
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-              <div className="w-80 h-80 rounded-full bg-yellow-500/25 blur-[120px] animate-pulse" />
             </div>
 
             <div className="relative z-10 p-6 md:p-8 w-full bg-[#0d1117] border border-gray-800 rounded-3xl shadow-2xl animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -61,7 +67,7 @@ export default function Experience() {
                   </h2>
                 </div>
 
-                <span className="text-lg font-medium text-yellow-400 md:ml-auto">
+                <span className="text-lg font-medium text-gray-400 md:ml-auto">
                   {selectedExperience.year}
                 </span>
               </div>
@@ -93,20 +99,20 @@ export default function Experience() {
                 onClick={() => setSelectedExperience(exp)}
               >
                 <span className={`absolute -top-10 text-xs md:text-sm font-mono font-bold whitespace-nowrap transition-all duration-300
-                  ${isSelected ? 'text-yellow-400 -translate-y-2' : 'text-gray-500 group-hover:text-gray-300'}
+                  ${isSelected ? 'text-white-400 -translate-y-2' : 'text-gray-500 group-hover:text-gray-300'}
                 `}>
                   {exp.title}
                 </span>
 
                 <div 
                   className={`relative w-6 h-6 md:w-8 md:h-8 rounded-full border-4 transition-all duration-300 transform group-hover:scale-110 
-                    ${isSelected ? 'border-yellow-400 bg-[#0d1117] scale-125' : 'border-gray-700 bg-gray-800'}`}>
+                    ${isSelected ? 'border-white-400 bg-[#0d1117] scale-125' : 'border-gray-700 bg-gray-800'}`}>
                   {isSelected && (
                     <div className="absolute inset-0 flex items-center justify-center text-xs md:text-sm">
                     </div>
                   )}
                   {isSelected && (
-                    <div className="absolute inset-0 bg-yellow-400 rounded-full blur-md opacity-40"></div>
+                    <div className="absolute inset-0 bg-gray-400 rounded-full blur-md opacity-40"></div>
                   )}
                 </div>
               </div>

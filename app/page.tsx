@@ -3,9 +3,6 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <div className="relative w-full mx-auto">
-      
-      <div className="absolute -top-20 -left-10 w-72 h-72 bg-yellow-600 rounded-full mix-blend-screen filter blur-[120px] opacity-20 animate-pulse pointer-events-none"></div>
-      <div className="absolute top-20 -right-10 w-72 h-72 bg-yellow-600 rounded-full mix-blend-screen filter blur-[120px] opacity-20 pointer-events-none"></div>
 
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         
@@ -19,9 +16,9 @@ export default function Home() {
             Computer Science and Engineering Student @ IST
           </div>
 
-          <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight text-white/50 leading-tight">
             Hi, I'm <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-700 via-yellow-500 to-yellow-300">
+            <span className="text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-tight">
               Guilherme Marques
             </span>
           </h1>
@@ -54,15 +51,15 @@ export default function Home() {
           
           <div className="p-5 md:p-6 font-mono text-sm leading-relaxed">
             <div className="flex items-center gap-2 mb-1.5">
-              <span className="text-yellow-400 font-semibold">guest@portfolio:~$</span>
-              <span className="text-gray-100">cat about_me.txt</span>
+              <span className="text-green-400 font-semibold">guest@portfolio:~$</span>
+              <span className="text-gray-100">cat README.md</span>
             </div>
             <p className="text-gray-300">
-              Passionate about software engineering, embedded systems, cybersecurity, and hardware prototyping. 
-              When I'm not organizing tech events, I'm probably writing code or tinkering with an Arduino.
+              Passionate about cybersecurity, software engineering, embedded systems, and web development. 
+              When I'm not coordinating tech events, I'm probably writing code or tinkering with an Arduino.
             </p>
             <div className="flex items-center gap-2 mt-4">
-              <span className="text-yellow-400 font-semibold">guest@portfolio:~$</span>
+              <span className="text-green-400 font-semibold">guest@portfolio:~$</span>
               <span className="w-2 h-4 bg-gray-400 animate-pulse"></span>
             </div>
           </div>
