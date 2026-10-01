@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import InteractiveTerminal from '@/components/InteractiveTerminal';
 
 export default function Home() {
   return (
@@ -30,32 +31,8 @@ export default function Home() {
         </Link>
       </div>
 
-      {/* Terminal — original style, rounded corners, own color palette */}
-      <div className="w-full max-w-2xl rounded-xl overflow-hidden bg-black border border-gray-800 shadow-2xl">
-        <div className="flex items-center px-4 py-2 bg-[#111] border-b border-gray-800">
-          <div className="flex gap-2">
-            <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></div>
-            <div className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></div>
-            <div className="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></div>
-          </div>
-          <div className="mx-auto text-[10px] md:text-xs text-gray-500 font-mono">bash — guest@portfolio</div>
-        </div>
-
-        <div className="p-5 md:p-6 font-mono text-sm leading-relaxed text-left">
-          <div className="flex items-center gap-2 mb-1.5">
-            <span className="text-green-400 font-semibold">guest@portfolio:~$</span>
-            <span className="text-gray-100">cat README.md</span>
-          </div>
-          <p className="text-gray-300">
-            Passionate about cybersecurity, software engineering, embedded systems, and web development.
-            When I&apos;m not coordinating tech events, I&apos;m probably writing code or tinkering with an Arduino.
-          </p>
-          <div className="flex items-center gap-2 mt-4">
-            <span className="text-green-400 font-semibold">guest@portfolio:~$</span>
-            <span className="w-2 h-4 bg-gray-400 animate-pulse"></span>
-          </div>
-        </div>
-      </div>
+      {/* Interactive Terminal */}
+      <InteractiveTerminal />
 
     </div>
   );
