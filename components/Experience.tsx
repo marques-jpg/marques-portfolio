@@ -12,7 +12,7 @@ const experiences = [
   },
   {
     id: 2,
-    title: "SINFO - LOGISTICS TEAM",
+    title: "SINFO - LOGISTICS",
     logo: "/logos/sinfo.png",
     year: "May 2025 - May 2026",
     description: "My role on the Logistics Team at SINFO – The Biggest free Tech Conference in Portugal – has equipped me with essential skills. Operating in a high-stakes, fast-paced environment, I collaborate with a large team to manage technical setups, venue design, and onsite coordination. This experience has significantly sharpened my adaptability, teamwork and dynamic problem-solving capabilities under pressure.",
@@ -26,13 +26,20 @@ const experiences = [
   },
   {
     id: 4,
+    title: "CLOUDFLARE",
+    logo: "/logos/cloudflare.png",
+    year: "June 2026 - September 2026",
+    description: "During my internship at Cloudflare, I resolved critical customer-facing cases across Cloudflare’s security and edge platform, focusing heavily on zones under active attack, including L3/L4 and L7 DDoS mitigation, rate limiting, and WAF evasion. I analyzed sophisticated threats such as SQL and OGNL injection attempts while diagnosing WAF false positives, undetected attack traffic, credential stuffing, and bot activity to identify the underlying signals driving each decision. Additionally, I troubleshot HTTP/HTTPS, DNS, TLS, and Cloudflare Workers applications leveraging Linux tooling, ClickHouse, and Grafana, actively reproducing edge platform anomalies and collaborating with senior engineers on complex escalations.",
+  },
+  {
+    id: 5,
     title: "ROB9-16",
     logo: "/logos/Rob916.png", 
     year: "October 2025 - March 2026",
     description: "Research Scholarship: During the 'Winter Camp' at Instituto Superior Técnico, I served as a Mentor for the Rob9-16 program. I had the rewarding challenge of teaching children (ages 6-12) the fundamentals of engineering. We built a Tic-Tac-Toe game from scratch using Arduino, where I taught C++ programming, logic design, and how to assemble circuits on a breadboard. It was a great opportunity to simplify complex technical concepts into engaging, hands-on learning experiences.",
   },
   {
-    id: 5,
+    id: 6,
     title: "STUDENT COUNCIL",
     logo: "/logos/adelaide.png",
     year: "February 2024 - September 2024",
@@ -41,7 +48,7 @@ const experiences = [
 ];
 
 export default function Experience() {
-  const [selectedExperience, setSelectedExperience] = useState(experiences[2]);
+  const [selectedExperience, setSelectedExperience] = useState(experiences[3]);
   
   return (
     <div className="flex flex-col items-center justify-center py-10 w-full">
