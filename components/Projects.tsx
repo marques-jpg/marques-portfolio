@@ -6,7 +6,6 @@ const projectsData = [
     title: "PRYVO",
     description: "A modern, decentralized and fully private desktop chat application",
     tags: ["GO", "Javascript", "WebRTC", "Wails", "SQL"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/Pryvo-private-chat-app/PRYVO",
     featured: true
   },
@@ -15,7 +14,6 @@ const projectsData = [
     title: "Portfolio",
     description: "My portfolio website. Built with Next.js and deployed with Cloudflare Pages.",
     tags: ["Next.js", "TypeScript", "Cloudflare"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/marques-portfolio",
     featured: false
   },
@@ -24,7 +22,6 @@ const projectsData = [
     title: "Neural Network in RISC-V",
     description: "An implementation in Assembly RISC-V of a feedforward Artificial Neural Network.",
     tags: ["Assembly, RISC-V"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/Neural-Network-in-RISC-V",
     featured: false
   },
@@ -33,7 +30,6 @@ const projectsData = [
     title: "Dotfiles",
     description: "My personal dotfiles for my NixOS system",
     tags: ["Nix", "NixOS"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/dotfiles",
     featured: true
   },
@@ -42,26 +38,22 @@ const projectsData = [
     title: "Weather Station",
     description: "Project made for the 'Engenharia para todos' 'Familas Tech' activity. Made in C++ for the arduino UNO. Using a Nokia LCD 5110 screen, a temperature and Humidity sensor (DHT22) and an air pressure sensor (BMP085) we can capture all the information we need and display it on the nokia screen",
     tags: ["Arduino", "DHT22", "C++", "BMP085", "Nokia LCD 5510"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/Weather-Station",
     featured: true
-  },  
+  },
   {
     id: 6,
     title: "Library Managment System",
     description: "A text based Library Management system written in Java for my Object-Oriented Programming class.",
     tags: ["Java"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/Projeto-PO",
     featured: false
   },
-
   {
     id: 7,
     title: "MILP Sports League Optimizer",
     description: "A C++ implementation of a MILP Sports League Optimizer for my Analysis and Synthesis of Algorithms",
     tags: ["Python"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/Projeto-ASA-3",
     featured: false
   },
@@ -70,7 +62,6 @@ const projectsData = [
     title: "Galo-Bot",
     description: "Project made for the Rob9-16 'Winter University'. Made in C++ and for an Arduino Uno. The game is displayed in a 3x3 grid made with LEDs, the 'X' player is represented by a fully turned on LED, the 'O' player is represented by a LED ticking really fast and the cursor is represented by a LED ticking slower than the 'O' player. In the end the winning player is displayed in the grid.",
     tags: ["Arduino", "C++", "LEDs", "Breadboard"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/Galo-Bot",
     featured: true
   },
@@ -79,7 +70,6 @@ const projectsData = [
     title: "Multi Client Pacman game",
     description: "A C implementation of the pacman game, built on a Client-Server architecture for my Operating Systems class.",
     tags: ["C", "Linux"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/Projeto-SO-2",
     featured: true
   },
@@ -88,7 +78,6 @@ const projectsData = [
     title: "8-bit Spike Processor",
     description: "A logic diagram implementation of a processor with a 8-bit data path architecture",
     tags: ["Logisim"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/Processor-8-bit-Spike",
     featured: false
   },
@@ -97,7 +86,6 @@ const projectsData = [
     title: "Star Battle game Solver",
     description: "A Prolog Implementation of a Script wich the main focuse is to algorithmically solve Star Battle for my Programming Logic class.",
     tags: ["Prolog"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/Projeto-LP",
     featured: false
   },
@@ -106,7 +94,6 @@ const projectsData = [
     title: "DAG Path Counter & Truck Routing",
     description: "A C++ DAG Path Counter & Truck Routing algorithm for my Anaysis and Synthesis fo Algorithms.",
     tags: ["C++"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/Projeto-ASA-2",
     featured: true
   },
@@ -115,7 +102,6 @@ const projectsData = [
     title: "Orbito game",
     description: "Orbito game implementation in Python for my Programming Fundaments class.",
     tags: ["Python"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/Projeto-FP",
     featured: true
   },
@@ -124,7 +110,6 @@ const projectsData = [
     title: "Vaccine Managment System",
     description: "A text based Vaccine Managment System implemented in C for my Introduction to Algorithms and Data Structure.",
     tags: ["C"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/Projeto-IAED",
     featured: false
   },
@@ -133,69 +118,66 @@ const projectsData = [
     title: "Protein Chain Energy Maximizer",
     description: "A Protein Chain Energy Maximizer algorithm written in C++ for my Analysis and Synthesis of Algorithms.",
     tags: ["C++"],
-    colorGlow: "from-yellow-500/20",
     url: "https://github.com/marques-jpg/Projeto-ASA-1",
     featured: true
   }
-
 ];
 
 export default function Projects() {
   return (
-    <div className="w-full max-w-5xl mx-auto py-12">
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        {projectsData.map((project) => (
-          <a 
-            key={project.id} 
+    <div className="w-full max-w-5xl mx-auto py-8">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        {projectsData.map((project, i) => (
+          <a
+            key={project.id}
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`group relative flex flex-col justify-between p-8 rounded-[2rem] bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden transition-all duration-500 hover:border-white/20 hover:-translate-y-1
+            className={`group relative flex flex-col justify-between p-6 bg-card border border-edge overflow-hidden transition-all duration-300 hover:border-ink-2 hover:-translate-y-0.5
               ${project.featured ? 'md:col-span-2' : 'col-span-1'}
             `}
           >
-            <div className={`absolute -inset-x-0 -bottom-0 h-1/2 bg-gradient-to-t ${project.colorGlow} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none`}></div>
+            {/* Project number */}
+            <span className="absolute top-4 right-5 text-[10px] text-ink-3 tabular-nums">
+              {String(i + 1).padStart(2, '0')}
+            </span>
 
-            <div className="relative z-10 mb-10">
-              <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-4 tracking-tight">
+            <div className="mb-6">
+              <h3 className="text-base font-semibold text-ink tracking-tight mb-2 pr-8">
                 {project.title}
               </h3>
-              <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+              <p className="text-ink-2 text-sm leading-relaxed">
                 {project.description}
               </p>
             </div>
 
-            <div className="relative z-10 flex items-end justify-between gap-4 mt-auto">
-              
-              <div className="flex flex-wrap gap-2">
+            <div className="flex items-end justify-between gap-4 mt-auto">
+              <div className="flex flex-wrap gap-1.5">
                 {project.tags.map((tag, index) => (
-                  <span 
-                    key={index} 
-                    className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-gray-300 backdrop-blur-md"
+                  <span
+                    key={index}
+                    className="px-2 py-0.5 border border-edge text-[10px] text-ink-3 tracking-wider uppercase"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
 
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white flex items-center justify-center transform group-hover:scale-110 group-hover:bg-gray-200 transition-all duration-300">
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="black" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  className="w-5 h-5 transform group-hover:rotate-45 transition-transform duration-300"
-                >
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </div>
-
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-4 h-4 flex-shrink-0 text-ink-3 group-hover:text-ink group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
             </div>
           </a>
         ))}

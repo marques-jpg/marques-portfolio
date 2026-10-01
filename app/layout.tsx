@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ["latin"] });
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Guilherme Marques",
@@ -17,10 +20,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-[#1a1a1a] text-white min-h-screen flex flex-col px-8 py-4 md:px-16 md:py-8`}>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{
+          __html: `try{if(localStorage.getItem('theme')==='light'){document.documentElement.classList.remove('dark')}}catch(e){}`
+        }} />
+      </head>
+      <body className={`${jetbrains.className} bg-page text-ink min-h-screen flex flex-col px-6 py-6 md:px-16 md:py-10`}>
         <Navbar />
-        <main className="flex-grow flex flex-col justify-center max-w-4xl w-full mx-auto">
+        <main className="flex-grow flex flex-col justify-center max-w-5xl w-full mx-auto">
           {children}
         </main>
         <Footer />

@@ -1,13 +1,18 @@
 import Link from 'next/link';
+import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex justify-end">
-      <div className="flex gap-8 text-sm md:text-base font-medium text-gray-400">
-        <Link href="/" className="hover:text-white transition-colors">Home</Link>
-        <Link href="/projects" className="hover:text-white transition-colors">Projects</Link>
-        <Link href="/experience" className="hover:text-white transition-colors">Experience</Link>
-        <a href="/cv.pdf" download="Guilherme_Marques_CV.pdf" className="hover:text-white transition-colors">CV</a>
+    <nav className="w-full flex justify-between items-center pb-16 md:pb-20">
+      <Link href="/" className="text-sm tracking-widest text-ink uppercase hover:opacity-60 transition-opacity">
+        GM
+      </Link>
+      <div className="flex items-center gap-8 text-sm tracking-wide text-ink-2">
+        <Link href="/" className="hover:text-ink transition-colors duration-200">Home</Link>
+        <Link href="/projects" className="hover:text-ink transition-colors duration-200">Projects</Link>
+        <Link href="/experience" className="hover:text-ink transition-colors duration-200">Experience</Link>
+        <a href="/cv.pdf" download="Guilherme_Marques_CV.pdf" className="hover:text-ink transition-colors duration-200">CV</a>
+        <ThemeToggle />
       </div>
     </nav>
   );
